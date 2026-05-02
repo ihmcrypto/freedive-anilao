@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -25,64 +26,7 @@ export default function Home() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-          {/* Ocean Flow */}
-          <div className="bg-white p-6 rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-2">Ocean Flow Day</h3>
-            <p className="text-gray-600 mb-4">
-              Explore multiple dive spots, enjoy island lunch, and capture your experience.
-            </p>
-            <ul className="text-sm text-gray-500 mb-6 space-y-1">
-              <li>✔ Boat dives (2–3 sites)</li>
-              <li>✔ Island lunch</li>
-              <li>✔ Photos & videos</li>
-            </ul>
-            <a
-              href="https://wa.me/639XXXXXXXXX"
-              className="block text-center bg-[#5CE1E6] text-black py-2 rounded-lg"
-            >
-              Book Now
-            </a>
-          </div>
-
-          {/* Intro Freedive */}
-          <div className="bg-white p-6 rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-2">Intro Freedive</h3>
-            <p className="text-gray-600 mb-4">
-              Your first underwater experience in a calm and controlled environment.
-            </p>
-            <ul className="text-sm text-gray-500 mb-6 space-y-1">
-              <li>✔ Beginner friendly</li>
-              <li>✔ Shallow water training</li>
-              <li>✔ Guided session</li>
-            </ul>
-            <a
-              href="https://wa.me/639XXXXXXXXX"
-              className="block text-center bg-[#5CE1E6] text-black py-2 rounded-lg"
-            >
-              Book Now
-            </a>
-          </div>
-
-          {/* Private */}
-          <div className="bg-white p-6 rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-2">Private Experience</h3>
-            <p className="text-gray-600 mb-4">
-              A fully personalized day with flexible schedule and premium attention.
-            </p>
-            <ul className="text-sm text-gray-500 mb-6 space-y-1">
-              <li>✔ Custom itinerary</li>
-              <li>✔ Private guide</li>
-              <li>✔ Flexible timing</li>
-            </ul>
-            <a
-              href="https://wa.me/639XXXXXXXXX"
-              className="block text-center bg-[#5CE1E6] text-black py-2 rounded-lg"
-            >
-              Book Now
-            </a>
-          </div>
-
+          {/* cards here */}
         </div>
       </section>
 
@@ -137,6 +81,9 @@ export default function Home() {
           Book Your Experience
         </a>
       </section>
+
+      {/* ✅ FOOTER HERE */}
+      <Footer />
 
     </main>
   );
