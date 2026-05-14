@@ -5,7 +5,7 @@ export default function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/hero.jpg"
+          src="/images/mabini-sunset.png"
           alt="Freediving in Anilao"
           className="w-full h-full object-cover"
         />
@@ -19,7 +19,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl mb-6">
-          Explore vibrant reefs, relax on a tropical island, and experience the ocean—no experience needed.
+          Explore vibrant reefs, relax on a tropical island, and discover the ocean at your own pace.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
@@ -36,7 +36,7 @@ export default function Hero() {
         </div>
 
         <p className="text-sm opacity-90">
-          ✔ Beginner-friendly &nbsp; ✔ Guided & safe &nbsp; ✔ Photos included
+          ✔ Beginner friendly &nbsp; ✔ Guided & safe &nbsp; ✔ Photos included
         </p>
       </div>
 
