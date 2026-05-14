@@ -13,9 +13,10 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-6">
           A Different Kind of Ocean Experience
         </h2>
+
         <p className="text-lg text-gray-600">
           Freedive Anilao offers curated ocean experiences designed for beginners and travelers.
-          No pressure, no heavy training—just a safe, guided way to explore the underwater world.
+          No pressure, no heavy training, just a safe and guided way to explore the underwater world.
         </p>
       </section>
 
@@ -35,6 +36,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-6">
           What Your Day Looks Like
         </h2>
+
         <p className="text-gray-600 leading-relaxed">
           Start your day with a relaxed briefing. Head out on a boat into clear waters.
           Explore vibrant reefs and marine life. Unwind with lunch on a tropical island.
@@ -82,7 +84,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* ✅ FOOTER HERE */}
+      {/* FOOTER */}
       <Footer />
 
     </main>
