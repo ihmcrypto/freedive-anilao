@@ -1,91 +1,116 @@
+const footerLinks = [
+  { label: "Experiences", href: "#experiences" },
+  { label: "Your day", href: "#day" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Location", href: "#location" },
+  { label: "Book", href: "#book" },
+];
+
+function InstagramIcon() {
+  return (
+    <svg aria-hidden="true" className="h-5 w-5" fill="none" viewBox="0 0 24 24">
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="17.4" cy="6.7" r="1" fill="currentColor" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg aria-hidden="true" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M13.7 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V10H8v3h2.6v8h3.1Z" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   return (
-    <footer className="bg-[#0E3A4A] text-white py-12 px-6 mt-20">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-
-        {/* Brand */}
-        <div>
-          <h3 className="text-xl font-semibold mb-2">
-            Freedive Anilao
-          </h3>
-          <p className="text-sm text-gray-300">
-            Ocean experiences for beginners and travelers in Anilao, Philippines.
-          </p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h4 className="font-semibold mb-2">Explore</h4>
-          <ul className="space-y-1 text-sm text-gray-300">
-            <li><a href="#" className="hover:text-white">Experiences</a></li>
-            <li><a href="#" className="hover:text-white">About</a></li>
-            <li><a href="#" className="hover:text-white">Book</a></li>
-          </ul>
-        </div>
-
-        {/* Social + Deep Practice */}
-        <div>
-          <h4 className="font-semibold mb-2">
-            Connect
-          </h4>
-
-          {/* Social Icons */}
-          <div className="flex items-center gap-4 mb-4">
-
-            {/* Instagram */}
+    <footer className="bg-[#062832] px-5 pb-8 pt-16 text-white sm:px-8 sm:pt-20 lg:px-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-12 border-b border-white/10 pb-14 md:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.8fr]">
+          <div className="max-w-md">
             <a
-              href="https://www.instagram.com/freedive.anilao/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-80"
+              href="#top"
+              aria-label="Freedive Anilao home"
+              className="inline-flex flex-col rounded-sm leading-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 fill-white"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
-              </svg>
+              <span className="text-[0.78rem] font-semibold tracking-[0.34em]">
+                FREEDIVE
+              </span>
+              <span className="mt-1.5 text-[0.64rem] tracking-[0.46em] text-white/55">
+                ANILAO
+              </span>
             </a>
-
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/profile.php?id=61589091390446"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-80"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 fill-white"
-                viewBox="0 0 24 24"
-              >
-                <path d="M13 22v-9h3l1-4h-4V7c0-1.1.3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9h4z"/>
-              </svg>
-            </a>
-
+            <p className="mt-6 text-sm leading-6 text-white/60">
+              Thoughtfully guided freediving and ocean days for travelers in
+              Anilao, Mabini, Batangas, Philippines.
+            </p>
+            <p className="mt-4 text-xs leading-5 text-white/40">
+              All water activities are subject to local weather and sea
+              conditions.
+            </p>
           </div>
 
-          {/* Deep Practice */}
-          <p className="text-sm text-gray-300 mb-2">
-            Want to go deeper?
-          </p>
+          <nav aria-label="Footer navigation">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8de9e8]">
+              Explore
+            </p>
+            <ul className="mt-5 space-y-3">
+              {footerLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-white/62 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-          <a
-            href="https://thedeeppractice.co/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#5CE1E6] font-medium hover:underline"
-          >
-            Visit The Deep Practice →
-          </a>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8de9e8]">
+              Connect
+            </p>
+            <div className="mt-5 flex gap-3">
+              <a
+                href="https://www.instagram.com/freedive.anilao/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Freedive Anilao on Instagram"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/35 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61589091390446"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Freedive Anilao on Facebook"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/35 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+              >
+                <FacebookIcon />
+              </a>
+            </div>
+            <p className="mt-6 text-sm text-white/60">Mabini, Batangas</p>
+            <p className="mt-1 text-xs text-white/40">Philippines</p>
+          </div>
         </div>
 
-      </div>
-
-      {/* Bottom */}
-      <div className="text-center text-xs text-gray-400 mt-10">
-        © {new Date().getFullYear()} Freedive Anilao. All rights reserved.
+        <div className="flex flex-col gap-3 pt-7 text-xs text-white/38 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} Freedive Anilao. All rights reserved.</p>
+          <p>Ocean days in Mabini, Batangas.</p>
+        </div>
       </div>
     </footer>
   );
