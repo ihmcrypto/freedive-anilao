@@ -121,7 +121,7 @@ function PinIcon() {
 
 export default function Home() {
   return (
-    <main className="overflow-hidden bg-[#fbfaf5] text-[#0b3039]">
+    <main className="overflow-hidden bg-[#FFF8F0] text-[#172554]">
       <Hero />
 
       <section id="about" className="px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
@@ -134,14 +134,14 @@ export default function Home() {
           </div>
 
           <div className="max-w-xl lg:pb-2">
-            <p className="text-pretty text-lg leading-8 text-[#31525a]">
+            <p className="text-pretty text-lg leading-8 text-[#52607A]">
               Anilao is a coastal escape in Mabini, Batangas, known for clear
               water, coral reefs, and days that move with the sea. We shape each
               experience around your comfort, background, and the conditions.
             </p>
             <a
               href="#location"
-              className="mt-7 inline-flex items-center gap-2 border-b border-[#0b3039]/25 pb-1 text-sm font-semibold text-[#0b3039] transition-colors hover:border-[#0b3039] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0b3039]"
+              className="mt-7 inline-flex items-center gap-2 border-b border-[#FF6B4A]/55 pb-1 text-sm font-semibold text-[#172554] transition-colors hover:border-[#FF6B4A] hover:text-[#3458EB] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3458EB]"
             >
               Find Anilao
               <ArrowIcon />
@@ -149,15 +149,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mx-auto mt-14 grid max-w-7xl gap-px overflow-hidden rounded-3xl border border-[#0b3039]/10 bg-[#0b3039]/10 sm:grid-cols-3">
+        <div className="mx-auto mt-14 grid max-w-7xl gap-px overflow-hidden rounded-3xl border border-[#3458EB]/12 bg-[#3458EB]/12 sm:grid-cols-3">
           {[
             ["New to freediving", "Simple guidance and time to settle in"],
             ["Already comfortable", "More room to explore at an easy pace"],
             ["Traveling together", "A day shaped around your group"],
           ].map(([title, description]) => (
             <div key={title} className="bg-white px-6 py-7 sm:px-7 sm:py-8">
-              <p className="text-sm font-semibold text-[#0b3039]">{title}</p>
-              <p className="mt-2 text-sm leading-6 text-[#5a747a]">
+              <p className="text-sm font-semibold text-[#172554]">{title}</p>
+              <p className="mt-2 text-sm leading-6 text-[#626D80]">
                 {description}
               </p>
             </div>
@@ -167,7 +167,7 @@ export default function Home() {
 
       <section
         id="experiences"
-        className="bg-[#eef4f1] px-5 py-20 sm:px-8 sm:py-28 lg:px-10"
+        className="bg-[#EEF2FF] px-5 py-20 sm:px-8 sm:py-28 lg:px-10"
       >
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
@@ -177,7 +177,7 @@ export default function Home() {
                 Choose the shape of your ocean time.
               </h2>
             </div>
-            <p className="max-w-xl text-base leading-7 text-[#4d6a70] lg:justify-self-end">
+            <p className="max-w-xl text-base leading-7 text-[#52607A] lg:justify-self-end">
               Start with the format that feels closest to your trip. Final
               timing, route, and inclusions are confirmed around your dates,
               group, and local conditions.
@@ -188,33 +188,33 @@ export default function Home() {
             {experiences.map((experience) => (
               <article
                 key={experience.title}
-                className="group flex min-h-[420px] flex-col rounded-3xl border border-[#0b3039]/10 bg-[#fbfaf5] p-7 transition-transform duration-300 hover:-translate-y-1 sm:p-8"
+                className="group flex min-h-[420px] flex-col rounded-3xl border border-[#3458EB]/12 bg-white p-7 shadow-[0_18px_50px_rgba(32,42,120,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#FF6B4A]/45 hover:shadow-[0_22px_55px_rgba(32,42,120,0.10)] sm:p-8"
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-xs tracking-[0.2em] text-[#638087]">
+                  <span className="font-mono text-xs tracking-[0.2em] text-[#6670A3]">
                     {experience.number}
                   </span>
-                  <span className="h-2 w-2 rounded-full bg-[#5CE1E6]" />
+                  <span className="h-2 w-2 rounded-full bg-[#FF6B4A]" />
                 </div>
-                <p className="mt-10 text-xs font-semibold uppercase tracking-[0.2em] text-[#568087]">
+                <p className="mt-10 text-xs font-semibold uppercase tracking-[0.2em] text-[#3458EB]">
                   {experience.label}
                 </p>
                 <h3 className="mt-3 text-3xl font-medium tracking-[-0.035em]">
                   {experience.title}
                 </h3>
-                <p className="mt-5 text-base leading-7 text-[#4d6a70]">
+                <p className="mt-5 text-base leading-7 text-[#52607A]">
                   {experience.description}
                 </p>
-                <div className="mt-auto border-t border-[#0b3039]/10 pt-6">
-                  <p className="text-xs uppercase tracking-[0.16em] text-[#789095]">
+                <div className="mt-auto border-t border-[#3458EB]/12 pt-6">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#6670A3]">
                     Best for
                   </p>
-                  <p className="mt-2 text-sm font-medium text-[#284a52]">
+                  <p className="mt-2 text-sm font-medium text-[#37436C]">
                     {experience.bestFor}
                   </p>
                   <a
                     href="#book"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#0b3039] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0b3039]"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#172554] transition-colors hover:text-[#3458EB] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3458EB]"
                   >
                     Ask about this day
                     <span className="transition-transform group-hover:translate-x-1">
@@ -230,7 +230,7 @@ export default function Home() {
 
       <section
         id="day"
-        className="bg-[#082f39] px-5 py-20 text-white sm:px-8 sm:py-28 lg:px-10"
+        className="bg-[#202A78] px-5 py-20 text-white sm:px-8 sm:py-28 lg:px-10"
       >
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-end">
@@ -248,8 +248,8 @@ export default function Home() {
 
           <ol className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-white/12 bg-white/12 md:grid-cols-2 lg:grid-cols-4">
             {dayFlow.map((step) => (
-              <li key={step.title} className="bg-[#082f39] p-7 sm:p-8">
-                <span className="font-mono text-xs tracking-[0.2em] text-[#5CE1E6]">
+              <li key={step.title} className="bg-[#202A78] p-7 sm:p-8">
+                <span className="font-mono text-xs tracking-[0.2em] text-[#FFD166]">
                   {step.time}
                 </span>
                 <h3 className="mt-8 text-xl font-medium">{step.title}</h3>
@@ -262,7 +262,7 @@ export default function Home() {
 
           <div className="mt-10 grid gap-8 rounded-3xl bg-white/6 p-7 sm:p-9 lg:grid-cols-[1fr_1.15fr] lg:items-center lg:p-12">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8de9e8]">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#FFD166]">
                 New to the water
               </p>
               <h3 className="mt-4 text-3xl font-medium tracking-[-0.03em] sm:text-4xl">
@@ -274,18 +274,18 @@ export default function Home() {
                 rushed.
               </p>
             </div>
-            <div className="rounded-2xl border border-white/12 bg-[#0d3c47] p-6 sm:p-7">
+            <div className="rounded-2xl border border-white/12 bg-[#2B3690] p-6 sm:p-7">
               <ul className="space-y-4">
                 {reassurance.map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-white/80">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#5CE1E6]/12 text-[#5CE1E6]">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#FF6B4A]/15 text-[#FF8065]">
                       <CheckIcon />
                     </span>
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 border-t border-white/10 pt-5 text-xs leading-5 text-white/50">
+              <p className="mt-6 border-t border-white/10 pt-5 text-xs leading-5 text-white/65">
                 All water plans depend on the weather and sea conditions on the
                 day.
               </p>
@@ -296,7 +296,7 @@ export default function Home() {
 
       <section
         id="gallery"
-        className="bg-[#f4efe5] px-5 py-20 sm:px-8 sm:py-28 lg:px-10"
+        className="bg-[#FFF0E6] px-5 py-20 sm:px-8 sm:py-28 lg:px-10"
       >
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[1.45fr_0.55fr] lg:items-end">
@@ -306,13 +306,13 @@ export default function Home() {
                 Stay for the light at the end of the day.
               </h2>
             </div>
-            <p className="text-sm leading-6 text-[#5c7378] lg:pb-1">
+            <p className="text-sm leading-6 text-[#62617B] lg:pb-1">
               Warm light settles over the Mabini coast as the bay grows quiet.
               It is a simple ending to a day spent in and around the water.
             </p>
           </div>
 
-          <figure className="relative mt-12 aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#c9b98e] sm:aspect-[16/10] lg:aspect-[16/8]">
+          <figure className="relative mt-12 aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#F5B16D] sm:aspect-[16/10] lg:aspect-[16/8]">
             <Image
               src="/images/mabini-sunset.png"
               alt="A golden sunset over calm water, boats, and the shoreline in Mabini"
@@ -320,17 +320,17 @@ export default function Home() {
               sizes="(max-width: 640px) 100vw, (max-width: 1280px) 92vw, 1200px"
               className="object-cover object-[56%_70%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#082f39]/65 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202A78]/70 via-transparent to-transparent" />
             <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 text-white sm:p-9">
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/60">
+                <p className="text-xs uppercase tracking-[0.2em] text-white/80">
                   Mabini, Batangas
                 </p>
                 <p className="mt-2 text-lg font-medium sm:text-xl">
                   Sunset on the Anilao coast
                 </p>
               </div>
-              <span className="hidden rounded-full border border-white/30 bg-black/10 px-4 py-2 text-xs text-white/75 backdrop-blur-sm sm:inline-flex">
+              <span className="hidden rounded-full border border-white/30 bg-[#172554]/15 px-4 py-2 text-xs text-white/80 backdrop-blur-sm sm:inline-flex">
                 Mabini sunset
               </span>
             </figcaption>
@@ -345,44 +345,44 @@ export default function Home() {
             <h2 className="mt-4 text-balance text-4xl font-medium tracking-[-0.04em] sm:text-5xl">
               Anilao, on the coast of Mabini.
             </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#4d6a70]">
+            <p className="mt-6 max-w-xl text-lg leading-8 text-[#52607A]">
               Based in Mabini, Batangas, south of Metro Manila. Anilao fits
               naturally into a Batangas stay or a wider Philippines itinerary.
             </p>
-            <p className="mt-5 max-w-xl text-base leading-7 text-[#5f777c]">
+            <p className="mt-5 max-w-xl text-base leading-7 text-[#667085]">
               Once we know your dates, we will confirm the meeting point,
               timing, and what to bring for your chosen experience.
             </p>
             <a
               href="#book"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0b3039] px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0b3039]"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#3458EB] px-6 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#2447D5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3458EB]"
             >
               Plan Anilao into your trip
               <ArrowIcon />
             </a>
           </div>
 
-          <div className="location-card relative min-h-[440px] overflow-hidden rounded-[2rem] border border-[#0b3039]/10 bg-[#dff2ef] p-7 sm:min-h-[500px] sm:p-10">
+          <div className="location-card relative min-h-[440px] overflow-hidden rounded-[2rem] border border-[#3458EB]/15 bg-[#DFF4FF] p-7 sm:min-h-[500px] sm:p-10">
             <div className="relative z-10 flex h-full min-h-[384px] flex-col justify-between sm:min-h-[420px]">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#4a7177]">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3458EB]">
                   Your route south
                 </span>
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0b3039] text-[#5CE1E6]">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FF6B4A] text-[#172554]">
                   <PinIcon />
                 </span>
               </div>
 
               <div className="mx-auto w-full max-w-md space-y-5">
-                <div className="rounded-2xl border border-[#0b3039]/10 bg-white/70 px-5 py-4 backdrop-blur-sm">
-                  <p className="text-xs uppercase tracking-[0.16em] text-[#698188]">
+                <div className="rounded-2xl border border-[#3458EB]/12 bg-white/70 px-5 py-4 backdrop-blur-sm">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#6C75A2]">
                     Start
                   </p>
                   <p className="mt-1 text-lg font-medium">Metro Manila</p>
                 </div>
-                <div className="ml-8 h-12 w-px border-l border-dashed border-[#0b3039]/25" />
-                <div className="rounded-2xl bg-[#0b3039] px-5 py-5 text-white shadow-xl shadow-[#0b3039]/12">
-                  <p className="text-xs uppercase tracking-[0.16em] text-[#8de9e8]">
+                <div className="ml-8 h-12 w-px border-l border-dashed border-[#3458EB]/30" />
+                <div className="rounded-2xl bg-[#3458EB] px-5 py-5 text-white shadow-xl shadow-[#3458EB]/18">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#FFD166]">
                     Arrive
                   </p>
                   <p className="mt-1 text-xl font-medium">Anilao, Mabini</p>
@@ -390,7 +390,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <p className="max-w-sm text-xs leading-5 text-[#557278]">
+              <p className="max-w-sm text-xs leading-5 text-[#52607A]">
                 Exact meeting details are shared when your date and experience
                 are confirmed.
               </p>
@@ -400,16 +400,16 @@ export default function Home() {
       </section>
 
       <section id="book" className="px-5 pb-5 pt-6 sm:px-8 sm:pb-8 lg:px-10">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#5CE1E6] px-6 py-14 text-[#082f39] sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#FFD166] px-6 py-14 text-[#172554] sm:px-10 sm:py-16 lg:px-16 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-end">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#24575f]">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#7A4900]">
                 Booking enquiries
               </p>
               <h2 className="mt-4 max-w-3xl text-balance text-4xl font-medium leading-tight tracking-[-0.045em] sm:text-5xl lg:text-6xl">
                 Make Anilao part of your Philippines trip.
               </h2>
-              <p className="mt-6 max-w-2xl text-base leading-7 text-[#285860] sm:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-7 text-[#4D4E70] sm:text-lg">
                 Tell us your dates, group size, and how comfortable you feel in
                 the water. We will help you choose the right experience.
               </p>
@@ -421,7 +421,7 @@ export default function Home() {
                   href="https://www.instagram.com/freedive.anilao/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#082f39] px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#082f39]"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#3458EB] px-6 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#2447D5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3458EB]"
                 >
                   Message on Instagram
                   <ArrowIcon />
@@ -430,12 +430,12 @@ export default function Home() {
                   href="https://www.facebook.com/profile.php?id=61589091390446"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#082f39]/25 px-6 py-3 text-sm font-semibold text-[#082f39] transition-colors hover:bg-white/30 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#082f39]"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#172554]/25 px-6 py-3 text-sm font-semibold text-[#172554] transition-colors hover:bg-white/40 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3458EB]"
                 >
                   Find us on Facebook
                 </a>
               </div>
-              <p className="mt-4 text-center text-xs text-[#35636a] lg:text-left">
+              <p className="mt-4 text-center text-xs text-[#66534C] lg:text-left">
                 Direct booking details are confirmed in your conversation.
               </p>
             </div>

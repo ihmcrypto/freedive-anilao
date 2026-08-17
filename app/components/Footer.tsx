@@ -34,19 +34,19 @@ function FacebookIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#062832] px-5 pb-8 pt-16 text-white sm:px-8 sm:pt-20 lg:px-10">
+    <footer className="bg-[#121842] px-5 pb-8 pt-16 text-white sm:px-8 sm:pt-20 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 border-b border-white/10 pb-14 md:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.8fr]">
           <div className="max-w-md">
             <a
               href="#top"
               aria-label="Freedive Anilao home"
-              className="inline-flex flex-col rounded-sm leading-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+              className="inline-flex flex-col rounded-sm leading-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF6B4A]"
             >
               <span className="text-[0.78rem] font-semibold tracking-[0.34em]">
                 FREEDIVE
               </span>
-              <span className="mt-1.5 text-[0.64rem] tracking-[0.46em] text-white/55">
+              <span className="mt-1.5 text-[0.64rem] tracking-[0.46em] text-[#FFD166]/80">
                 ANILAO
               </span>
             </a>
@@ -54,14 +54,14 @@ export default function Footer() {
               Thoughtfully guided freediving and ocean days for travelers in
               Anilao, Mabini, Batangas, Philippines.
             </p>
-            <p className="mt-4 text-xs leading-5 text-white/40">
+            <p className="mt-4 text-xs leading-5 text-white/65">
               All water activities are subject to local weather and sea
               conditions.
             </p>
           </div>
 
           <nav aria-label="Footer navigation">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8de9e8]">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#FFD166]">
               Explore
             </p>
             <ul className="mt-5 space-y-3">
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/62 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+                    className="text-sm text-white/70 transition-colors hover:text-[#FFD166] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF6B4A]"
                   >
                     {link.label}
                   </a>
@@ -79,7 +79,7 @@ export default function Footer() {
           </nav>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8de9e8]">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#FFD166]">
               Connect
             </p>
             <div className="mt-5 flex gap-3">
@@ -88,7 +88,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Freedive Anilao on Instagram"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/35 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-[#FF6B4A] hover:text-[#FF8065] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF6B4A]"
               >
                 <InstagramIcon />
               </a>
@@ -97,17 +97,17 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Freedive Anilao on Facebook"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/35 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5CE1E6]"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-[#FF6B4A] hover:text-[#FF8065] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF6B4A]"
               >
                 <FacebookIcon />
               </a>
             </div>
             <p className="mt-6 text-sm text-white/60">Mabini, Batangas</p>
-            <p className="mt-1 text-xs text-white/40">Philippines</p>
+            <p className="mt-1 text-xs text-white/65">Philippines</p>
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 pt-7 text-xs text-white/38 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 pt-7 text-xs text-white/65 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Freedive Anilao. All rights reserved.</p>
           <p>Ocean days in Mabini, Batangas.</p>
         </div>
